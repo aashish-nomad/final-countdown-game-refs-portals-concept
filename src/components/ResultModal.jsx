@@ -1,5 +1,5 @@
-export default function ResultModal({ result, targetTime }) {
-  return <dialog className="result-modal" open>
+export default function ResultModal({ result, targetTime, ref }) {
+  return <dialog ref={ref} className="result-modal">
     <h2>{result === 'lost' ? 'You lost' : 'You won'}</h2>
     <p>
       The target time was: <strong>{targetTime}</strong> seconds
